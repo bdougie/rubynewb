@@ -9,3 +9,19 @@ padding: 0px 0px 0px 50px;
 .jumbotron {
 	text-align: center;
 }
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding: 50px;
+  text-align: center;
+ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  } 
+}

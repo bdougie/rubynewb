@@ -4,7 +4,7 @@ Rubynewb::Application.routes.draw do
   get "welcome/index"
   get "welcome/about"
 
-  get 'video' => 'live_video#index'
+  get 'live' => 'live_video#index'
 
   
   root :to => "welcome#index"

@@ -2,7 +2,7 @@
 =========
 This is an open source project, and will hopefully make a website. 
 
-Site is available at [RubyNewbies.org](rubynewb.herokuapp.com)
+Site is available at [RubyNewbies.org](http://rubynewb.herokuapp.com)
 
 ####How to Contribute
 
@@ -13,6 +13,13 @@ Site is available at [RubyNewbies.org](rubynewb.herokuapp.com)
 3.	Github Issue: You can also open up a [Github Issue](https://github.com/brianllamar/rubynewb/issues) instead and the group will take care of it. [About Github Issues](https://github.com/theodinproject/curriculum/issues)
 
 - Please note to only create a pull request to the [Dev](https://github.com/brianllamar/rubynewb/tree/dev) branch
+
+#### Setup instructions
+
+```bundle install --without production```
+```bundele exce rake db:migrate```
+
+There is dormant user model that was added, require to create the database. 
 
 ####Thanks
 

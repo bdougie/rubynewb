@@ -7,6 +7,7 @@ $lightblue: #56b7e8;
 @mixin color-transition($basic-color, $hover-color) {
   a {
     color: $basic-color;
+    text-decoration: none;
     &:hover {
       color: $hover-color;
       -webkit-transition: color 0.2s ease-in-out;
@@ -103,16 +104,12 @@ aside {
   float: right;
 
   iframe {
-    border: 0; 
     min-width: 450px; 
     min-height: 500px;
+    border: 0;
     frameborder: 0;
     scrolling: "no"
   }
-}
-
-#current {
-
 }
 
 #important {
@@ -129,7 +126,18 @@ aside {
 /* video page */
 
 .video {
-  text-align: center;
+    width: 800px;
+    margin: 0 auto;
+  h1, p {
+    text-align: center;
+  }
+
+  iframe {
+    width: 800px;
+    height: 600px; 
+    border: 0;
+    frameborder: 0;
+  }
 }
 
 .fork {

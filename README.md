@@ -4,10 +4,6 @@ This is an open source project, and will hopefully make a website.
 
 Site is available at [RubyNewbies.org](rubynewb.herokuapp.com)
 
-####Submit a Github Issue
-
-If anything is missing from the site or you would like to see it added, please assist by creating an [Issue]
-
 ####How to Contribute
 
 1.	Edit on Github For small changes like adding links to student solutions or fixing typos, it's easiest to just edit the file directly on Github, which Erik show's how to do in this Odin [YouTube video](https://www.youtube.com/watch?v=V74l_zS1x8E).

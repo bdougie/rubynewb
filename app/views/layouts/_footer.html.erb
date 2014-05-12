@@ -1,11 +1,18 @@
-<footer class="footer"> 
-  <nav>
-    <ul>
-    	<li>
-    <%= link_to "Ruby Newbies", "http://twitter.com/brianllamar" %>
-    by <%= link_to "Brian", "http://twitter.com/brianllamar"%>
-  </li>
-      <li>Brought to you by<a href="http://www.theodinproject.com/home"> The Odin Project</a></li>
-    </ul>
-  </nav>
+<footer> 
+	<div id="footer-wrapper">
+	 	<div id="links">
+	 		<p>Ruby Newbies</a> by <%= link_to "Brian", "http://twitter.com/brianllamar"%></p>
+	  	<p>Brought to you by <a href="http://www.theodinproject.com/home">The Odin Project</a></p>
+	  	<p><%= link_to "More Study Groups", "http://www.theodinproject.com/studygroups" %></p> 
+	  </div>
+	  
+	  <nav>
+	  	<ul>
+		  	<li><%= link_to "live videos", live_path %></li>
+    		<li><%= link_to "g+ community", "https://plus.google.com/communities/115473914992534971842" %></li>
+    		<li><%= link_to "archive", "https://www.youtube.com/channel/UCSn-Mw5Ikxa1A_2LYo42SJQ/playlists" %></li>
+	  	</ul>
+	  </nav>
+  </div>
+
 </footer>

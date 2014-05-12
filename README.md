@@ -16,8 +16,11 @@ Site is available at [RubyNewbies.org](http://rubynewb.herokuapp.com)
 
 #### Setup instructions
 
-```bundle install --without production``` </br></br>
-```bundle exce rake db:migrate```
+Instal gems
+```bundle install --without production``` 
+</br>
+Initialize database
+```bundle exec rake db:migrate```
 
 There is dormant user model that was added, require to create the database. 
 

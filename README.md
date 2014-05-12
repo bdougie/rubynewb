@@ -14,15 +14,13 @@ Site is available at [RubyNewbies.org](http://rubynewb.herokuapp.com)
 
 - Please note to only create a pull request to the [Dev](https://github.com/brianllamar/rubynewb/tree/dev) branch
 
-#### Setup instructions
+#### Setup Instructions
 
 Instal gems
 ```bundle install --without production``` 
 </br>
-Initialize database
+and initialize database
 ```bundle exec rake db:migrate```
-
-There is dormant user model that was added, require to create the database. 
 
 ####Thanks
 

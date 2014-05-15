@@ -17,6 +17,21 @@ $lightblue: #56b7e8;
   }
 }
 
+@mixin image-swap($id, $img1, $img2){
+  #{$id} {
+    background-image: url($img1);
+    background-size: 100%;
+  
+    &:hover {
+      background-image: url($img2);
+      -webkit-transition: background-image 0.2s ease-in-out;
+      -moz-transition: background-image 0.2s ease-in-out;
+      -o-transition: background-image 0.2s ease-in-out;
+      transition: background-image 0.2s ease-in-out;
+    }
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -122,6 +137,18 @@ aside {
   color: white;
 }
 
+.picto {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  display: inline-block;
+}
+
+@include image-swap("#gplus", "gplus.png", "gplus_red.png");
+@include image-swap("#github", "github.png", "github_light.png");
+@include image-swap("#twitter", "twitter.png", "twitter_blue.png");
+@include image-swap("#odin", "odin.png", "odin_light.png");
+
 /* video page */
 
 .video {
@@ -145,6 +172,7 @@ aside {
   left: 0; 
   border: 0;
 }
+
 /* footer */
 
 footer {

@@ -185,6 +185,8 @@ footer {
     float: right;
     li {
       padding: 0 20px 0 20px;
+
+      @include color-transition($lightred, $lightblue);
     }
   } 
 }
@@ -195,13 +197,19 @@ footer {
 }
 #links {
   float: left;
+
 }
 
 @media screen and (max-width: 1100px) {
 
+  main {
+    width: 95%;
+  }
+
   article {
     float: none;
     width: 100%;
+    margin-top: 100px;
   }
 
   aside {
@@ -225,8 +233,23 @@ footer {
   }
 
   #header-nav {
+    @include color-transition($lightred, $lightblue);
     float: none;
-    margin-left: 3%;
+  }
+
+  #footer-wrapper {
+    width: 95%;
+  }
+
+}
+
+@media screen and (max-width: 890px) {
+  footer {
+    ul {
+      float: none;
+      display: block;
+      padding: 0px 10px 0 10px;
+    }
   }
 }
 
@@ -236,8 +259,11 @@ footer {
     width: 100%;
 
     iframe {
-      height: 200px;
+      width: auto;
     }
   }
-}
 
+  #header-nav {
+    margin-left: 0;
+  }
+}

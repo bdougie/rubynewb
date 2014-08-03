@@ -24,4 +24,5 @@ end
 
 group :development do
   gem 'sqlite3'
+  gem 'capistrano', '~> 3.2.0'
 end

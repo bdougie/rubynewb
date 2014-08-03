@@ -21,7 +21,7 @@ $lightblue: #56b7e8;
   #{$id} {
     background-image: url($img1);
     background-size: 100%;
-  
+
     &:hover {
       background-image: url($img2);
       -webkit-transition: background-image 0.2s ease-in-out;
@@ -75,7 +75,7 @@ header {
   width:80%;
   height: 150px;
   margin: 0 auto;
-  
+
   font-size: 1.2em;
 }
 #logo {
@@ -92,7 +92,7 @@ header {
 
 #header-nav {
   float: right;
-  
+
   li {
     line-height: 100px;
     padding-left: 20px;
@@ -112,13 +112,19 @@ article {
   float: left;
 }
 
+#what-image {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+}
+
 
 aside {
   width: 40%;
   float: right;
 
   iframe {
-    min-width: 450px; 
+    min-width: 450px;
     min-height: 500px;
     border: 0;
     frameborder: 0;
@@ -160,16 +166,16 @@ aside {
 
   iframe {
     width: 800px;
-    height: 600px; 
+    height: 600px;
     border: 0;
     frameborder: 0;
   }
 }
 
 .fork {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
+  position: absolute;
+  top: 0;
+  left: 0;
   border: 0;
 }
 
@@ -180,7 +186,7 @@ footer {
   width: 100%;
   border-top: lightgray solid 2px;
   padding-top: 20px;
-  
+
   ul {
     float: right;
     li {
@@ -188,7 +194,7 @@ footer {
 
       @include color-transition($lightred, $lightblue);
     }
-  } 
+  }
 }
 
 #footer-wrapper {

@@ -22,6 +22,8 @@ Instal gems
 and initialize database
 ```bundle exec rake db:migrate```
 
+>> Deploy folder is intentiallay left out. You must run ```cap install```
+
 ####Thanks
 
 Special Thanks to [the Odin Project](http://www.theodinproject.com/) for making this happen!

@@ -12,7 +12,7 @@ Site is available at [RubyNewbies.org](http://rubynewb.herokuapp.com)
 
 3.	Github Issue: You can also open up a [Github Issue](https://github.com/brianllamar/rubynewb/issues) instead and the group will take care of it. [About Github Issues](https://github.com/theodinproject/curriculum/issues)
 
-- Please note to only create a pull request to the [Dev](https://github.com/brianllamar/rubynewb/tree/dev) branch
+- Please note to only create a pull request to the [Develop](https://github.com/brianllamar/rubynewb/tree/dev) branch
 
 #### Setup Instructions
 

@@ -1,6 +1,6 @@
 #README
 =========
-This is an open source project, and will hopefully make a website. 
+This is an open source project, and will hopefully make a website.
 
 Site is available at [RubyNewbies.org](http://rubynewb.herokuapp.com)
 
@@ -14,15 +14,26 @@ Site is available at [RubyNewbies.org](http://rubynewb.herokuapp.com)
 
 - Please note to only create a pull request to the [Develop](https://github.com/brianllamar/rubynewb/tree/dev) branch
 
-#### Setup Instructions
+#### Gitflow
+
+The preferred method for working local is [git flow](http://theblackc000000de.blogspot.com/2014/09/why-i-am-using-git-flow-and-you-should.html)
+
+Please do the following setup afte downloading your fork locally.
+
+1. `git flow init` to install git flow, follow the setup prompts and use the defaults
+2. `git flow feature start <my-feature-name>`
+3. `git push origin <my-feature-name>`
+
+  When finished with feature:
+4. Create pull request(from your fork on github)
+5. `git flow feature finish <my-feature-name>`
+6. `git push origin <branch>` if needed
+
+#### General Setup Instructions
 
 Instal gems
-```bundle install --without production``` 
-</br>
-and initialize database
-```bundle exec rake db:migrate```
-
->> Deploy folder is intentiallay left out. You must run ```cap install```
+1. ```bundle install --without production```
+2. ```bundle exec rake db:migrate```
 
 ####Thanks
 

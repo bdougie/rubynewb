@@ -24,12 +24,12 @@ Please do the following setup afte downloading your fork locally.
 2. `git flow feature start <my-feature-name>`
 3. `git push origin <my-feature-name>`
 
-  When finished with feature
+  When finished with feature:
 4. Create pull request(from your fork on github)
 5. `git flow feature finish <my-feature-name>`
 6. `git push origin <branch>` if needed
 
-#### Setup Instructions
+#### General Setup Instructions
 
 Instal gems
 ```bundle install --without production```

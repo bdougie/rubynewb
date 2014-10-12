@@ -32,10 +32,8 @@ Please do the following setup afte downloading your fork locally.
 #### General Setup Instructions
 
 Instal gems
-```bundle install --without production```
-</br>
-and initialize database
-```bundle exec rake db:migrate```
+1. ```bundle install --without production```
+2. ```bundle exec rake db:migrate```
 
 ####Thanks
 

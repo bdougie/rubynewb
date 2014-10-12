@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.1.0'
+
+# Assets
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -9,8 +11,14 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '~> 3.0.3'
+
+# Server
 gem 'puma'
 gem 'newrelic_rpm'
+
+# Testing
+gem "capybara", "2.1.0"
+gem "minitest", '~> 5.4.2'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -26,3 +34,4 @@ group :development do
   gem 'sqlite3'
   gem 'capistrano', '~> 3.2.0'
 end
+

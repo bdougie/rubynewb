@@ -12,6 +12,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '~> 3.0.3'
 
+gem 'acts-as-taggable-on', '~> 3.4'
+gem 'redcarpet'
+# gem 'slugalicious' for unique slug urls
+
 # Server
 gem 'puma'
 gem 'newrelic_rpm'
@@ -19,6 +23,7 @@ gem 'newrelic_rpm'
 # Testing
 gem "capybara", "2.1.0"
 gem "minitest", '~> 5.4.2'
+gem "shoulda"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

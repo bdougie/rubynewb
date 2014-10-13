@@ -28,6 +28,7 @@ gem "shoulda"
 gem "pry"
 gem "pry-byebug", "1.2.0"
 gem "spring", "1.1.2"
+gem "spring-commands-testunit", "1.0.1" # use `spring testunit <file_path>` to run test
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

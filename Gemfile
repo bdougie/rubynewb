@@ -24,6 +24,8 @@ gem 'newrelic_rpm'
 gem "capybara", "2.1.0"
 gem "minitest", '~> 5.4.2'
 gem "shoulda"
+gem "pry"
+gem "pry-byebug", "1.2.0"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -38,5 +40,6 @@ end
 group :development do
   gem 'sqlite3'
   gem 'capistrano', '~> 3.2.0'
+  gem "better_errors", "1.0.1"
 end
 

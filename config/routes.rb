@@ -6,7 +6,7 @@ Rubynewb::Application.routes.draw do
 
   get 'live' => 'live_video#index'
 
-  resources :blog_posts, only: [:index, :edit, :update]
+  resources :blog_posts, only: [:create, :index, :edit, :update]
 
   root :to => "welcome#index"
 end

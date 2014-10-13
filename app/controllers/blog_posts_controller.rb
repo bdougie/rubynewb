@@ -1,11 +1,15 @@
 class BlogPostsController < ApplicationController
 
   def index
-    @blog_posts = BlogPost.all
+    if params[:tag]
+      @blog_posts = BlogPost.tagged_with(params[:tag]).order("created_at")
+    else
+      @blog_posts = BlogPost.all.order("created_at")
+    end
   end
 
   def show
-    @blog_post = BlogPost.find(params[:id])
+    @blog_post = BlogPost.friendly.find(params[:slug])
   end
 
   def new
@@ -13,7 +17,7 @@ class BlogPostsController < ApplicationController
   end
 
   def edit
-    @blog_post = BlogPost.find(params[:id])
+    @blog_post = BlogPost.friendly.find(params[:slug])
   end
 
   def create
@@ -28,7 +32,7 @@ class BlogPostsController < ApplicationController
   end
 
   def update
-    @blog_post = BlogPost.find(params[:id])
+    @blog_post = BlogPost.friendly.find(params[:slug])
     if @blog_post.update_attributes(params[:blog_post])
       redirect_to blog_post_path, notice: "Post was updated successfully."
     else

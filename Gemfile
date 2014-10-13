@@ -12,9 +12,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '~> 3.0.3'
 
+# Blog
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'redcarpet'
-# gem 'slugalicious' for unique slug urls
+gem 'friendly_id'
 
 # Server
 gem 'puma'

@@ -1,8 +1,10 @@
 class BlogPost < ActiveRecord::Base
+  extend FriendlyId
 
-  # acts_as_taggable
+  friendly_id :title, :use => :slugged
+  acts_as_taggable
 
-  validate :title, presence: true
-  validate :body, presence: true
+  validates :title, presence: true
+  validates :body, presence: true
 
 end

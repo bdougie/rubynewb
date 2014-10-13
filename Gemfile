@@ -26,6 +26,7 @@ gem "minitest", '~> 5.4.2'
 gem "shoulda"
 gem "pry"
 gem "pry-byebug", "1.2.0"
+gem "spring", "1.1.2"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

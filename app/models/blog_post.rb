@@ -1,8 +1,8 @@
 class BlogPost < ActiveRecord::Base
 
-  attr_accessor :title, :body
+  acts_as_taggable
 
-  validates :title, presence: true
-  validates :body, presence: true
+  validate :title, presence: true
+  validate :body, presence: true
 
 end

@@ -9,7 +9,7 @@ class BlogPostsController < ApplicationController
   end
 
   def show
-    @blog_post = BlogPost.friendly.find(params[:slug])
+    @blog_post = BlogPost.find(params[:id])
   end
 
   def new
@@ -17,7 +17,7 @@ class BlogPostsController < ApplicationController
   end
 
   def edit
-    @blog_post = BlogPost.friendly.find(params[:slug])
+    @blog_post = BlogPost.find(params[:id])
   end
 
   def create
@@ -32,7 +32,7 @@ class BlogPostsController < ApplicationController
   end
 
   def update
-    @blog_post = BlogPost.friendly.find(params[:slug])
+    @blog_post = BlogPost.find(params[:id])
     if @blog_post.update_attributes(params[:blog_post])
       redirect_to blog_post_path, notice: "Post was updated successfully."
     else

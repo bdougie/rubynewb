@@ -1,7 +1,9 @@
 class BlogPost < ActiveRecord::Base
-  extend FriendlyId
+  # TODO: implement friendly_ids as a separate ticket/branch
+  #
+  # extend FriendlyId
 
-  friendly_id :title, :use => :slugged
+  # friendly_id :title, :use => :slugged
   acts_as_taggable
 
   validates :title, presence: true

@@ -23,6 +23,7 @@ gem 'newrelic_rpm'
 
 # Testing
 gem "capybara", "2.1.0"
+gem "capybara_minitest_spec"
 gem "minitest", '~> 5.4.2'
 gem "shoulda"
 gem "pry"

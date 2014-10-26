@@ -38,7 +38,9 @@ class IntegrationTest < MiniTest::Spec
     visit admin_session_path
     fill_in "Email", with: "admin@example.com"
     fill_in "Password", with: "top_secret"
+    click_button "Sign in"
   end
+
 end
 
 

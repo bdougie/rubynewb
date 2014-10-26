@@ -28,10 +28,11 @@ gem 'newrelic_rpm'
 # Testing
 gem "capybara", "2.1.0"
 gem "capybara_minitest_spec"
+gem "launchy", "2.4.2"
 gem "minitest", '~> 5.4.2'
-gem "shoulda"
 gem "pry"
 gem "pry-byebug", "1.2.0"
+gem "shoulda"
 gem "spring", "1.1.2"
 gem "spring-commands-testunit", "1.0.1" # use `spring testunit <file_path>` to run test
 

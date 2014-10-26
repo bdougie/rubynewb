@@ -4,6 +4,8 @@ Rubynewb::Application.routes.draw do
   get "welcome/about"
   get 'live' => 'live_video#index'
 
+  devise_for :admins
+
   resources :users
   resources :blog_posts, only: [:create, :index, :edit, :update]
 

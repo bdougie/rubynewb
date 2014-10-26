@@ -8,6 +8,7 @@ require "active_support/testing/setup_and_teardown"
 
 
 class ActiveSupport::TestCase
+  include Devise::TestHelpers
   ActiveRecord::Migration.check_pending!
 
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
@@ -15,14 +16,6 @@ class ActiveSupport::TestCase
   # Note: You'll currently still have to declare fixtures explicitly in integration tests
   # -- they do not yet inherit this setting
   fixtures :all
-
-  # Add more helper methods to be used by all tests here...
-end
-
-class IntegrationTest < MiniTest::Spec
-  include Rails.application.routes.url_helpers
-  include Capybara::DSL
-  register_spec_type(/integration$/, self)
 end
 
 class HelperTest < MiniTest::Spec
@@ -30,3 +23,22 @@ class HelperTest < MiniTest::Spec
   include ActionView::TestCase::Behavior
   register_spec_type(/Helper$/, self)
 end
+
+class IntegrationTest < MiniTest::Spec
+  include Rails.application.routes.url_helpers
+  include Capybara::DSL
+  register_spec_type(/integration$/, self)
+
+  def view_blog_index
+    visit welcome_index_path
+    click_link "blog"
+  end
+
+  def login_as_admin
+    visit admin_session_path
+    fill_in "Email", with: "admin@example.com"
+    fill_in "Password", with: "top_secret"
+  end
+end
+
+

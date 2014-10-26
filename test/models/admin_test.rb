@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class AdminTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+  should "create a valid admin" do
+    @admin = admins(:admin)
+    assert @admin.valid?
+  end
 end

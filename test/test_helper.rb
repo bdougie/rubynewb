@@ -14,7 +14,7 @@ class ActiveSupport::TestCase
   #
   # Note: You'll currently still have to declare fixtures explicitly in integration tests
   # -- they do not yet inherit this setting
-  fixtures :all
+  @fixtures = fixtures :all
 end
 
 class ActionController::TestCase
@@ -28,6 +28,7 @@ class HelperTest < MiniTest::Spec
 end
 
 class IntegrationTest < MiniTest::Spec
+  @fixtures
   include Rails.application.routes.url_helpers
   include Capybara::DSL
   register_spec_type(/integration$/, self)
@@ -37,11 +38,11 @@ class IntegrationTest < MiniTest::Spec
     click_link "blog"
   end
 
-  def login_as_admin
+  def login_as(admin)
     visit admin_session_path
-    fill_in "Email", with: "admin@example.com"
-    fill_in "Password", with: "top_secret"
-    # click_button "Sign in"
+    fill_in "Email", with: admin.email
+    fill_in "Password", with: admin.encrypted_password
+    click_button "Sign in"
   end
 
   def view_new_blog_post_view
@@ -50,4 +51,4 @@ class IntegrationTest < MiniTest::Spec
 
 end
 
-
+require "mocha/setup"

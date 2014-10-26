@@ -27,6 +27,7 @@ gem "puma"
 gem "newrelic_rpm"
 
 # Testing
+gem "binding_of_caller"
 gem "capybara", "2.1.0"
 gem "capybara_minitest_spec"
 gem "launchy", "2.4.2"

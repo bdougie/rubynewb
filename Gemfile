@@ -12,6 +12,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '~> 3.0.3'
 
+# Authentification
+gem "devise"
+gem "pundit"
+
 # Blog
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'redcarpet'

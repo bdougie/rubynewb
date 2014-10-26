@@ -249,6 +249,21 @@ footer {
 
 }
 
+/*form*/
+
+form {
+  padding: 2em;
+}
+
+.button {
+  padding-top: 1em;
+}
+
+#blog_post_body {
+  width: 50em;
+  height: 20em;
+}
+
 @media screen and (max-width: 890px) {
   footer {
     ul {

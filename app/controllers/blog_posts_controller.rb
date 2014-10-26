@@ -1,11 +1,7 @@
 class BlogPostsController < ApplicationController
 
   def index
-    if params[:tag]
-      @blog_posts = BlogPost.tagged_with(params[:tag]).order("created_at")
-    else
-      @blog_posts = BlogPost.all.order("created_at")
-    end
+    @blog_posts = BlogPost.all.order("created_at")
   end
 
   def show

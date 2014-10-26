@@ -1,0 +1,15 @@
+<section id="blog-index">
+
+  <main>
+    <h1>RubyNewbie Tips</h1>
+
+    <article>
+      <% @blog_posts.each do |post| %>
+        <h3><%= post.title %></h3>
+        <%= post.body %>
+      <% end %>
+    </article>
+
+  </main>
+
+</section>

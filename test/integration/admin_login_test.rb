@@ -9,7 +9,7 @@ class AdminLoginTest < IntegrationTest
     # Test is not using the sign in button due to Brrypt Error
     # devise fixture BCrypt::Errors::InvalidHash: invalid hash
     #
-    assert_equal "/admins/sign_in", current_path
+    assert_equal "/admins/login", current_path
   end
 
 end

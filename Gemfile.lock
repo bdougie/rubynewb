@@ -156,6 +156,9 @@ GEM
     shoulda-context (1.2.1)
     shoulda-matchers (2.7.0)
       activesupport (>= 3.0.0)
+    simple_form (3.0.2)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
     slop (3.6.0)
     spring (1.1.2)
     spring-commands-testunit (1.0.1)
@@ -202,7 +205,6 @@ DEPENDENCIES
   capistrano (~> 3.2.0)
   capybara (= 2.1.0)
   capybara_minitest_spec
-  coffee-rails (~> 4.0.0)
   devise
   friendly_id
   jbuilder (~> 1.2)
@@ -221,6 +223,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.0)
   sdoc
   shoulda
+  simple_form
   spring (= 1.1.2)
   spring-commands-testunit (= 1.0.1)
   sqlite3

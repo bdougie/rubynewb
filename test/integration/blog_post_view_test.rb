@@ -8,8 +8,7 @@ class BlogPostViewTest < IntegrationTest
   end
 
   should "create a new blog post" do
-    view_blog_index
-    # login_as_admin
+    view_new_blog_post_view
   end
 
   should "view individual blog if title is clicked" do

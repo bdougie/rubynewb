@@ -7,7 +7,7 @@ Rubynewb::Application.routes.draw do
   devise_for :admins
 
   resources :users
-  resources :blog_posts, only: [:create, :index, :edit, :update]
+  resources :blog_posts, only: [:create, :index, :edit, :update, :new]
 
   root :to => "welcome#index"
 end

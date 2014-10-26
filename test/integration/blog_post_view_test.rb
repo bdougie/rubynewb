@@ -7,13 +7,23 @@ class BlogPostViewTest < IntegrationTest
     assert_equal "/blog_posts", current_path
   end
 
-  should "display form for new blog post" do
+  should "create a new blog post" do
     view_blog_index
+    login_as_admin
+  end
+
+  should "view individual blog if title is clicked" do
+    view_blog_index
+    # click_link "#{blog.title}"
   end
 
   def view_blog_index
     visit welcome_index_path
-    click_link 'blog'
+    click_link "blog"
+  end
+
+  def login_as_admin
+    # todo: this should be in the helper.
   end
 
 end

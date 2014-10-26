@@ -4,7 +4,7 @@ Rubynewb::Application.routes.draw do
   get "welcome/about"
   get 'live' => 'live_video#index'
 
-  devise_for :admins
+  devise_for :admins, path_names: {sign_in: "login", sign_out: "logout"}, controllers: { registrations: 'users/registrations' }
 
   resources :users
   resources :blog_posts, only: [:create, :index, :edit, :update, :new]

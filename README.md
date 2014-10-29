@@ -1,5 +1,6 @@
 ![logo](http://i.imgur.com/VtBGM2o.jpg)
-This is an open source project, and will hopefully make a website.
+<br>
+This is an open source project, feel free to change anything.
 
 Site is available at [RubyNewbies.org](http://rubynewb.herokuapp.com)
 

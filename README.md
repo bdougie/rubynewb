@@ -1,6 +1,6 @@
-#README
-=========
-This is an open source project, and will hopefully make a website.
+![logo](http://i.imgur.com/VtBGM2o.jpg)
+<br>
+This is an open source project, feel free to change anything.
 
 Site is available at [RubyNewbies.org](http://rubynewb.herokuapp.com)
 

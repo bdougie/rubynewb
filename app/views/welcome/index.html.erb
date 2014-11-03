@@ -1,60 +1,9 @@
 
 <main>
   <article>
-   <div id="current">
-      <h3>Meeting</h3>
-
-      <p>This is a weekly meetup, we meet the <strong>every</strong> Tuesday. Videos are archived and available for previous viewing <%= link_to "here", "https://www.youtube.com/playlist?list=PLk2OOH9M7Vui3hTIyMihIA6FjFDicy-02"%>. </p>
-
-
-      <h4><%= link_to "Why Private Messages and Abstraction?", "https://plus.google.com/events/cq7uijjvemes5rqm55ib8rcr7eo" %></h4>
-
-      <!-- <div id="what-image">
-        <img src="">
-      </div>
- -->
-      <p>I'm a Ruby Newbie. But if you have more experience please feel free to join up, it will be greatly appreciated. The schedule is posted</p>
-      <p>I have personally completed several tutorials in Rails (framework for Ruby), but I am looking to increase my increase my experience with the Ruby Lang and looking for anyone else who is interested learning Ruby with me.</p>
-
-
-      <a href="https://plus.google.com/u/0/102551882338253835993/posts">
-        <div class="picto" id="gplus"></div>
-      </a>
-      <a href="https://github.com/brianllamar/rubynewb">
-        <div class="picto" id="github"></div>
-      </a>
-      <a href="https://twitter.com/brianllamar">
-        <div class="picto" id="twitter"></div>
-      </a>
-      <a href="http://www.theodinproject.com/home">
-        <div class="picto" id="odin"></div>
-      </a>
-      <a href="https://www.facebook.com/groups/799036546794318/">
-        <div class="picto" id="facebook"></div>
-      </a>
-
-      <strong><p>Featured Ruby Newbie: <a href="https://twitter.com/brianllamar">Brian</a></p></strong>
-
-      <div id="important" >
-        <h4>Helpful Prerequisites</h4>
-
-       <p>The Odin <%= link_to "Study Groups", "http://www.theodinproject.com/studygroups" %> Track
-       </p>
-       <p>Read the <%= link_to "Getting started guide", "https://gist.github.com/brianllamar/11261930#file-week0-md" %>.
-       </p>
-       </ul>
-      </div>
-
-  </div>
-
+    <%= render "welcome/welcome_message" %>
   </article>
   <aside>
-    <h4>Schedule</h4>
-    <p>Tuesday "Online Meetups"
-    <%= link_to "Events", "https://plus.google.com/b/102551882338253835993/events" %>.</p>
-    <p>We occasionally do some <%= link_to "TDD Practice Sessions","https://plus.google.com/b/102551882338253835993/events" %> during the week on <%= link_to "Nitrous.io", "https://www.nitrous.io/join/5Q0SdS4QzCY?utm_source=nitrous.io&utm_medium=copypaste&utm_campaign=referral" %>.</p>
-    <div class="nitrous" id="what-image">
-      <a href="https://www.nitrous.io/join/5Q0SdS4QzCY?utm_source=nitrous.io&utm_medium=copypaste&utm_campaign=referral"><img src="https://cdn1.lockerdome.com/uploads/ef7570f9e48e0e321ed3e42a58794791aed7d67fb0721e40295a466082546a68_large" border="0" alt="Link to this page"></a>
-    </div>
+    <%= render "welcome/side_bar" %>
   </aside>
 </main>

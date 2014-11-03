@@ -1,0 +1,6 @@
+admin:
+  email: "admin@example.com"
+  encrypted_password: "top_secret"
+bob:
+  email: "bob@example.com"
+  encrypted_password: "$2a$10$MFILoaQqegEY7swhM1KVeu7f1hls.3YhRRvrhWVX/NULJsqpyTLeO"

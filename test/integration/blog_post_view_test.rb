@@ -8,13 +8,13 @@ class BlogPostViewTest < IntegrationTest
   end
 
   should "have access to blog post button as an admin" do
-    # login_as_admin
-    #
+    skip
+    login_as_admin
+
     # test will not pass until the above is fixed.
-    #
-    # view_blog_index
-    # click_button "New Post"
-    # assert_equal "/blog_posts", current_path
+    view_blog_index
+    click_button "New Post"
+    assert_equal "/blog_posts", current_path
   end
 
   should "create a new blog post" do
@@ -23,11 +23,12 @@ class BlogPostViewTest < IntegrationTest
     fill_in "Body", with:"Letterpress small batch hashtag photo booth trust fund chia."
     click_button "Create Blog post"
     assert_equal "/blog_posts", current_path
-  end
 
-  should "view individual blog if title is clicked" do
-    view_blog_index
-    # click_link "#{blog.title}"
+    # todo need to add database cleaner
+    #view individual blog if title is clicked"
+    # click_link "Mumblecore raw denim"
+
+    # assert_equal "/blog_posts/#{blog.id}", current_path
   end
 
 end

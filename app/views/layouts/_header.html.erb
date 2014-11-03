@@ -13,7 +13,8 @@
      <% if current_admin %>
       <li><%= link_to "LOGOUT", destroy_admin_session_path, method: :delete, class: 'btn btn-mini'  %></li>
     <% end %>
-    <li><%= link_to "blog", blog_posts_path %></li>
+    <!--add blog link when error is found ->
+    <!-- <li><%= link_to "blog", blog_posts_path %></li> -->
     <li><%= link_to "g+ community", "https://plus.google.com/communities/115473914992534971842" %></li>
     <li><%= link_to "archive", "https://www.youtube.com/channel/UCSn-Mw5Ikxa1A_2LYo42SJQ/playlists" %></li>
   </ul>

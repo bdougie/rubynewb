@@ -21,3 +21,15 @@
 
 en:
   hello: "Hello world"
+  devise:
+    sessions:
+      user:
+        signed_in: 'Welcome user, you are signed in.'
+      admin:
+        signed_in: 'Hello admin!'
+      mailer:
+        confirmation_instructions:
+          subject: 'Hello everybody!'
+          user_subject: 'Hello User! Please confirm your email'
+        reset_password_instructions:
+          subject: 'Reset instructions'

@@ -1,3 +1,4 @@
+@import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
 $lightred: #ed4040;
@@ -42,7 +43,7 @@ body {
   background-color: white;
 
   font-family: 'Lato', sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: 1.5;
 }
 
@@ -255,6 +256,21 @@ footer {
     width: 95%;
   }
 
+}
+
+/*form*/
+
+form {
+  padding: 2em;
+}
+
+.button {
+  padding-top: 1em;
+}
+
+#blog_post_body {
+  width: 50em;
+  height: 20em;
 }
 
 @media screen and (max-width: 890px) {

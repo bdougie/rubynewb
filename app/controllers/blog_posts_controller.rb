@@ -19,7 +19,7 @@ class BlogPostsController < ApplicationController
   def create
     @blog_post = BlogPost.new(blog_post_params)
     if @blog_post.save
-      redirect_to blog_posts_path([:id]), notice: "Post was saved successfully"
+      redirect_to blog_posts_path, notice: "Post was saved successfully"
     else
       flash[:error] =  "There was an error creating the post"
       redirect_to new_blog_post_path

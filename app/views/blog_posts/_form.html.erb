@@ -1,7 +1,9 @@
   <%= simple_form_for @blog_post do |f| %>
-    <%= f.input :title %>
-    <%= f.input :body, as: :text %>
-  <div class="button">
-    <%= f.button :submit %>
-  </div>
+     <div class="control-group">
+      <%= f.input :title %>
+    </div>
+      <%= f.input :body, as: :text %>
+    <div class="button">
+      <%= f.submit %>
+    </div>
   <% end %>

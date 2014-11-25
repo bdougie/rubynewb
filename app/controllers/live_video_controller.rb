@@ -1,4 +1,4 @@
 class LiveVideoController < ApplicationController
-	def index
+  def index
   end
 end

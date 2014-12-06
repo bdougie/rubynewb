@@ -31,9 +31,12 @@ Please do the following setup afte downloading your fork locally.
 
 #### General Setup Instructions
 
-Instal gems
+Install gems
 1. ```bundle install --without production```
 2. ```bundle exec rake db:migrate```
+
+*[New for Rails 4](http://brandonhilkert.com/blog/using-rails-4-dot-1-secrets-for-configuration/)
+Copy the config/secrets.yml and set your keys using the `rake secret` command
 
 [Postgres Instructions](https://www.digitalocean.com/community/tutorials/how-to-setup-ruby-on-rails-with-postgres)
 ```
@@ -46,7 +49,6 @@ To start PostgreSQL at login:
 $ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 ```
-
 ####Thanks
 
 Special Thanks to [the Odin Project](http://www.theodinproject.com/) for making this happen!

@@ -36,6 +36,6 @@ config/initializers/secret_token.rb
 ## Environment normalisation:
 /.bundle
 /vendor/bundle
-.
+.env
 .DS_Store
 .env

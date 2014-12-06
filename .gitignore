@@ -39,3 +39,4 @@ config/secrets.yml
 /vendor/bundle
 .
 .DS_Store
+.env

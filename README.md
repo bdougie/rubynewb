@@ -35,6 +35,18 @@ Instal gems
 1. ```bundle install --without production```
 2. ```bundle exec rake db:migrate```
 
+[Postgres Instructions](https://www.digitalocean.com/community/tutorials/how-to-setup-ruby-on-rails-with-postgres)
+```
+$ brew update
+$ brew install postgres --no-python
+$ initdb /usr/local/var/postgres -E utf8
+```
+To start PostgreSQL at login:
+```
+$ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+$ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+```
+
 ####Thanks
 
 Special Thanks to [the Odin Project](http://www.theodinproject.com/) for making this happen!

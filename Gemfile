@@ -30,7 +30,6 @@ gem "puma", "~> 2.9.1"
 gem "newrelic_rpm"
 
 # Testing
-gem "binding_of_caller", "~> 0.7.2"
 gem "capybara", "2.1.0"
 gem "capybara_minitest_spec"
 gem "launchy", "2.4.2"
@@ -56,5 +55,6 @@ group :development do
   gem "capistrano", "~> 3.2.0"
   gem "better_errors", "1.0.1"
   gem 'meta_request', "~> 0.3.4"
+  gem "binding_of_caller", "~> 0.7.2"
 end
 

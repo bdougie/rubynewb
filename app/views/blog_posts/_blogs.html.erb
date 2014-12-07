@@ -1,4 +1,6 @@
-<% @blog_posts.each do |post| %>
-  <h3><%= link_to post.title, blog_post_path(post) %></h3>
-  <%= post.body %>
-<% end %>
+<div class="container col-lg-12">
+  <% @blog_posts.each do |post| %>
+    <h3><%= link_to post.title, blog_post_path(post) %></h3>
+    <%= post.body %>
+  <% end %>
+</div>

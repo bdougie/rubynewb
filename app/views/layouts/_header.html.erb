@@ -11,7 +11,7 @@
   <nav>
   <ul id="header-nav">
     <% if current_admin %>
-      <li><%= link_to "LOGOUT", destroy_admin_session_path, method: :delete, class: 'btn btn-mini'  %></li>
+      <%= render "blog_posts/new_blog_post_button" %>
     <% end %>
     <li><%= link_to "blog", blog_posts_path %></li>
     <li>

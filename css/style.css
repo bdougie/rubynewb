@@ -462,10 +462,6 @@ nav
   background-size: cover;
   height: 100%;
   position: relative;
-
-  @media screen and (max-width: 995px) , screen and (max-height: 700px) {
-    height: 300px;
-  }
 }
 
 .page1 h1
@@ -839,7 +835,11 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) { 
 
-.page1 .columns, .page2 .columns, .page3 .columns, .page4 .columns {
+.page1 .columns {
+    position: relative;
+    height: 100%;
+}
+.page2 .columns, .page3 .columns, .page4 .columns {
     position: relative;
     width: 100%;
     height: auto;
@@ -851,6 +851,10 @@ and (orientation : portrait) {
     width: 100%;
     height: auto;
     opacity: 1;
+}
+
+.picture {display: none;}
+
 }
 
 

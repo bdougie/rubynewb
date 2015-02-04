@@ -839,7 +839,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) { 
 
-.page2 .columns, .page3 .columns, .page4 .columns {
+.page1 .columns, .page2 .columns, .page3 .columns, .page4 .columns {
     position: relative;
     width: 100%;
     height: auto;
@@ -852,9 +852,6 @@ and (orientation : portrait) {
     height: auto;
     opacity: 1;
 }
-
-.picture {display: none;}
-
 
 
 

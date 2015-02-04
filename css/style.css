@@ -464,7 +464,7 @@ nav
   position: relative;
 
   @media screen and (max-width: 995px) , screen and (max-height: 700px) {
-    height: 500px;
+    height: 300px;
   }
 }
 

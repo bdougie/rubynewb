@@ -17,10 +17,9 @@
 	13. Media Queries Settings
 			
 */
-
-
-
-
+@-ms-viewport{
+  width: device-width;
+}
 
 /* 01. FONT FACE ================================================== */
 

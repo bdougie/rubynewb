@@ -461,7 +461,8 @@ nav
   background: url('../img/bg.jpg')#131313;
   background-size: cover;
   height: 100%;
-  position: fixed`;
+  min-width: 980px 
+  position: relative;
 }
 
 .page1 h1

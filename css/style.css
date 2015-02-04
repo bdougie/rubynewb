@@ -461,8 +461,11 @@ nav
   background: url('../img/bg.jpg')#131313;
   background-size: cover;
   height: 100%;
-  min-width: 980px 
   position: relative;
+
+  @media screen and (max-width: 995px) , screen and (max-height: 700px) {
+    height: 700px;
+  }
 }
 
 .page1 h1

@@ -460,7 +460,7 @@ nav
 {
   background: url('../img/bg.jpg')#131313;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   position: relative;
 
   @media screen and (max-width: 995px) , screen and (max-height: 700px) {

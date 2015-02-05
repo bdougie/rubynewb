@@ -1,216 +1,159 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
 
-  <!-- Meta tags & title /-->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>RubyNewbies</title>
-  <meta name="description" content="his is an open source project to help organize all efforts of the Ruby Newbies" />
-  <meta name="keywords" content="ruby, newbies, slack, code, newbie" />
-  <meta name="author" content="Brian Douglas">
-  <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- Favicon /-->
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" /> <!-- Favicon /-->
+    <title>Ruby Newbies</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Stylesheets /-->
-  <link rel="stylesheet" href="css/gumby.css">   			<!-- Gumby Framework /-->
-  <link rel="stylesheet" href="css/style.css">   			<!-- Main stylesheet /-->
-  <link rel="stylesheet" href="css/animate.css"> 			<!-- Animations /-->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.css">
-    
-  
-  <script src="js/modernizr-2.6.2.min.js"></script>  <!-- Modernizr /-->
-  
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Ruby Newbies</span>
+                </a>
+            </div>
 
-<!-- NAVIGATION ############################################### -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="https://brianllamar.typeform.com/to/xwzkNg">Login</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/rubyfornewbies/code_of_conduct">Code of Conduct</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-		<div class="cbp-af-header">
-		
-			<nav >
-				
-				 <!-- Logo -->
-			
-				 <div id="logo">
-				 
-           <a href="#"><img alt="Logo" src="img/beta.png"></a>
-				 	
-				 </div>
-				
-				 <!-- Links -->
-				
-				 <ul id="nav" >
-					 <li><a href="https://github.com/rubyfornewbies/code_of_conduct">Code of Conduct</a></li>
-					 <li><a href="http://rubynewbies.slack.com">Log in</a></li>
-				 </ul>
-				 			 
-			</nav>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Ruby Newbies</h1>
+                        <p class="intro-text">"A community for newbies to ruby"</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-		
-		</div> 
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+                <h2>Chat with others just like you</h2>
+            <div class="col-lg-8 col-lg-offset-2">
+                <div >
+                  <img src="img/placeit_big.jpg" alt="EXAMPLE">
+                </div>
+                <br>
+                <p>
+                  Learning to code comes with it's ups and downs, Don't spend valuable learning time on struggling to grasp Ruby concepts and best practices on your own.
+                  The <strong>RubyNewbies</strong> can help with everything from setting up your environment answer to pairing on katas using test driven development.
+                </p>
+                <a href="https://brianllamar.typeform.com/to/xwzkNg" class="btn btn-default btn-lg">Sign Up</a>
+            </div>
+        </div>
+    </section>
 
-<!-- END NAVIGATION ############################################### -->
+    <!-- Save thie sectio for future use - Download Section -->
+    <!--<section id="download" class="content-section text-center">-->
+        <!--<div class="download-section">-->
+            <!--<div class="container">-->
+                <!--<div class="col-lg-8 col-lg-offset-2">-->
+                    <!--<h2>Download Grayscale</h2>-->
+                    <!--<p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>-->
+                    <!--<a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
 
+    <!-- Footer-Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="share-links"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="share-links"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="share-links"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCSn-Mw5Ikxa1A_2LYo42SJQ/playlists" class="share-links"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">Youtube</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<!-- HEADER / FIRST SECTION ############################################### -->
+    <footer>
+    </footer>
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-<section class="page1">
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-          <div>
-            <!-- Huge Title centered --> 
-		      
-              <div class="huge-title centered">  
-              
-                <h1>Ruby Newbies</h1>
-                <small>"A community for newbies to ruby"</small>
-                
-                <div class="space"></div>
-                
-                <a href="https://brianllamar.typeform.com/to/xwzkNg" class="button-white goto">Join us</a> 
-            
-              </div>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
 
-              <!-- IMG DISCOVER MORE --> 
-            
-              <div class="go-down twelve columns">
-            
-                <a href="#hello" class="goto"><img src="img/down.png" alt="MORE"></a>
-            
-              </div>
-          </div>
-          <!--<div class="page1 visible-xs-12 hidden-lg-12 hidden-md-12 hidden-sm-12">-->
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
-              <!--[> Huge Title centered <] -->
-            
-              <!--<div class="huge-title centered">  -->
-              
-                <!--<h1>Ruby Newbies</h1>-->
-                <!--<small>"hi mom"</small>-->
-                
-                <!--<div class="space"></div>-->
-                
-                <!--<a href="https://brianllamar.typeform.com/to/xwzkNg" class="button-white goto">Join us</a> -->
-            
-              <!--</div>-->
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
 
-              <!--[> IMG DISCOVER MORE <] -->
-            
-              <!--<div class="go-down twelve columns">-->
-            
-                <!--<a href="#hello" class="goto"><img src="img/down.png" alt="MORE"></a>-->
-            
-              <!--</div>-->
+</body>
 
-          <!--</div>-->
-
-</section>
-
-
-
-
-<!-- THIRD SECTION ############################################### -->
-
-
-<section id="hello" class="page3 centered" >
-
-	<div class="row">
-
-        <!-- Title --> 
-				
-        <h3><strong>Chat with others just like you.</strong></h3>
-								
-				<!-- Image from left --> 
-			
-				<div >
-				
-					<img src="img/placeit_big.jpg" alt="EXAMPLE">
-				
-				</div>
-
-		
-				<div>
-				
-					<!-- Content --> 
-					
-					<p>
-            Learning to code comes with it's ups and downs, Don't spend valuable learning time on struggling to grasp Ruby concepts and best practices on your own.
-            The <strong>RubyNewbies</strong> can help with everything from setting up your environment answer to pairing on katas using test driven development.
-          </p>
-										
-					<div class="space"></div>
-					
-					<a href="https://brianllamar.typeform.com/to/xwzkNg" class="button-green">Start Now</a> 
-				
-				</div>
-				
-		
-			</div> <!-- End row div -->    
-</section>
-
-<!-- END THIRD SECTION ############################################### -->
-
-
-<!-- BEGIN HEADER ############################################### -->
-
-<div id="container" class="container">
-
-  <section id="footer" class="footer">
-
-      
-:         <div class="row">
-          
-            <!-- Article centered on the Page --> 
-      
-          <div class="nine columns centered">
-          
-            <!-- Nav Footer --> 
-          
-            <ul> 
-              <li> <a href="https://plus.google.com/+RubynewbiesOrgrubynewbies/posts" target="_blank">Google Plus</a> </li> 
-              <li> <a href="https://www.youtube.com/channel/UCSn-Mw5Ikxa1A_2LYo42SJQ/playlists" rel="nofollow" target="_blank">Youtube</a> </li> 
-              <li> <a href="https://github.com/rubyfornewbies" rel="nofollow" target="_blank">Github</a> </li> 
-              <li> <a href="https://twitter.com/rubynewbies" rel="nofollow" target="_blank">Twitter</a> </li> 
-            </ul>
-
-            <!-- Title --> 
-                                  
-            <!--<p class="copyright">Showpage is a free app landing page made by <a href="http://www.iamsupview.be">Supview</a> and is under  <a href="http://creativecommons.org/licenses/by/4.0/">CC License</a> <br>© Copyright 2014 Supview. All rights reserved.</p>	-->
-    
-          </div>
-          
-      
-          </div>
-        
-
-  </section>
-
-
-  <!-- END FOOTER SECTION ############################################### -->
-
-</div> <!-- end of container -->
-
-
-  <!-- Grab Google CDN's jQuery, fall back to local if offline -->
-  <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-  
-  <script src="js/main.js" type="text/javascript"></script> 								
-  <script src="js/jquery.scrollto.js" type="text/javascript"></script> 						<!-- ScrollTo -->	
-  <script src="js/mediaCheck.js" type="text/javascript"></script> 							<!-- MediaCheck -->	
-  <script src="js/bootstrap.min.js"></script>
-
-  </body>
-  
 </html>
+

@@ -2423,7 +2423,7 @@ table th[class*="col-"] {
   min-height: .01%;
   overflow-x: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 620px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -4214,7 +4214,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-bottom: 10px;
   line-height: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 620px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -4311,7 +4311,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     top: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 620) {
   .navbar-form .form-group {
     margin-bottom: 5px;
   }
@@ -4433,7 +4433,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #555;
   background-color: #e7e7e7;
 }
-@media (max-width: 767px) {
+@media (max-width: 620px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777;
   }
@@ -4529,7 +4529,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #fff;
   background-color: #080808;
 }
-@media (max-width: 767px) {
+@media (max-width: 620px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #080808;
   }
@@ -6376,7 +6376,7 @@ button.close {
 .visible-lg-inline-block {
   display: none !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 620px) {
   .visible-xs {
     display: block !important;
   }
@@ -6391,17 +6391,17 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 620px) {
   .visible-xs-block {
     display: block !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 620px) {
   .visible-xs-inline {
     display: inline !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 620px) {
   .visible-xs-inline-block {
     display: inline-block !important;
   }
@@ -6496,7 +6496,7 @@ button.close {
     display: inline-block !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 620px) {
   .hidden-xs {
     display: none !important;
   }

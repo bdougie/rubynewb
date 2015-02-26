@@ -297,21 +297,21 @@ a:focus {
 .btn {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
 .btn-default {
-    border: 1px solid #95d074;
+    border: 5px solid #95d074;
     color: #95d074;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #95d074;
+    border-color: #95d074;
     outline: 0;
     color: #000;
     background-color: #95d074;
